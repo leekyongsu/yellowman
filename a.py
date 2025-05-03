@@ -2,10 +2,19 @@
 
 import streamlit as st
 
+
+
 st.write("Hello, *World!* :sunglasses:")
 st.write("이경수, *바보!* :sunglasses:")
 st.write("건양대, *재난안전소방학과* :angry:")
 
+st.image('강아지.png')
+st.image('dog.jpg')
+st.image('이미지.jpg')
+color = st.radio('color', ('blue', 'red', 'orange', 'green'), horizontal =True)
+
+f'aa :{color}[bb]'
+st.sidebar.write('사이드바')
 
 '# *파이썬* 재밌네'
 '## 파이썬 *재밌네*'
@@ -14,7 +23,7 @@ st.write("건양대, *재난안전소방학과* :angry:")
 '##### :red[파이썬 재밌네]'
 '###### 파이썬 재밌네'
 
-st.html(' <H1> 파이썬의 [세계에] 오신걸 환영합니다.<H1>')
+st.html(' <H1> ✅파이썬의 [세계에] 오신걸 환영합니다.<H1>')
 st.html(' <H2> 파이썬의 세계에 오신걸 환영합니다.<H2>')
 st.html(' <H3> 파이썬의 세계에 오신걸 환영합니다.<H3>')
 st.html(' <H10> 파이썬의 세계에 오신걸 환영합니다.<H10>')
@@ -55,11 +64,3 @@ chart_data = pd.DataFrame(np.random.randn(18, 3), columns=["a", "b", "c"])
 
 st.line_chart(chart_data)
 
-import streamlit as st
-
-st.badge("New")
-st.badge("Success", icon=":material/check:", color="green")
-
-st.markdown(
-    ":violet-badge[:material/star: Favorite] :orange-badge[⚠️ Needs review] :gray-badge[Deprecated]"
-)
